@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0; 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 100vh;*/
+}
+
+.btn i {
+    color: #ffffff; 
+    font-size: 1.2em; 
+}
+
+.btn-steam {
+    display: inline-flex;        
+    align-items: center;       
+    padding: 12px 24px;       
+    background-color: #171a21; 
+    color: #ffffff; 
+    border: 1px solid #4c545b;  
+    border-radius: 5px; 
+    font-size: 1em;     
+    text-decoration: none;    
+}
+
+.btn-steam:hover {
+    background-color: #4c545b; 
+    color: #ffffff; 
+}
+
+p, h1, h3{
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    text-align: center;
+    
+  }
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.background {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(4px); 
+    transition: background-image 4s ease; 
+}
+
+header {
+    width: 100%;
+    background-color: transparent; 
+    box-shadow: none;
+}
+
+.header-margin {
+    margin-top: 200px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+.main{
+    z-index: 1;
+    position: relative;
+}
+
+footer {
+    text-align: center; 
+    padding: 10px 0; 
+    background-color: #4caf50; 
+    color: white; 
+    width: 100%; 
+    position: relative; 
+    left: 0; 
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none; 
+    display: flex; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+.nav-item {
+    width: 100%; 
+    height: 100%; 
+}
+
+.nav-item a {
+    display: block;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    line-height: 170px; 
+    color: rgba(255, 255, 255, 0); 
+    text-decoration: none; 
+    background-size: cover; 
+    transition: transform 0.3s; 
+}
+
+
+.nav-item.main {
+    z-index: 1;
+}
+
+
+.nav-item.main a {
+    background-image: url('/btn/TerraWorld.png');
+    display: block;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    line-height: 220px; 
+    color: rgba(255, 255, 255, 0); 
+    text-decoration: none; 
+    background-size: cover; 
+    transition: transform 0.3s;
+    margin-top: 50px;
+}
+
+.nav-item.mods a {
+    background-image: url('/btn/btn_mods.png');
+}
+
+.nav-item.comm a {
+    background-image: url('/btn/btn_comm.png');
+}
+
+.nav-item.about a {
+    background-image: url('/btn/btn_about.png');
+}
+
+.nav-item.updates a {
+    background-image: url('/btn/btn_updates.png');
+}
+
+.nav-item a:hover {
+    transform: scale(1.05);
+}
+
+.btn-github {
+    display: inline-flex;      
+    align-items: center;       
+    padding: 12px 24px;        
+    background-color: #171515;
+    color: #ffffff;           
+    border: 1px solid #4c545b;
+    border-radius: 5px;        
+    font-size: 1em;            
+    text-decoration: none;     
+    transition: background-color 0.3s, color 0.3s;              
+}
+
+.btn-github:hover {
+    background-color: #4c545b;
+    color: #ffffff;           
+}
+
+
+.update {
+    background-image: url('../public/bg/dirt.png');
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center; 
+    border: 10px solid #4caf50;  
+    border-radius: 5px;          
+    padding: 16px;               
+    margin: 16px 0;              
+    transition: transform 0.3s, box-shadow 0.3s;    
+    color: white;                                   
+}
+
+.update:hover {
+    transform: scale(1.02);             
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+} 
+
+
+
+
